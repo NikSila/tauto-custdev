@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Т-Авто · Помоги нам понять, что нужно автомобилистам</title>
-<meta name="description" content="Исследование для Т-Банка. 10–15 минут. Можно ругать." />
+<title>Авто-исследование · 10 минут</title>
+<meta name="description" content="Что банкам стоит делать для автомобилистов. 10 минут." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -27,7 +27,6 @@
   a{color:inherit}
   button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
-  /* Header */
   header.top{position:sticky;top:0;z-index:50;background:var(--black);color:#fff}
   .top-inner{max-width:760px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700}
@@ -44,42 +43,26 @@
 
   main{max-width:760px;margin:0 auto;padding:32px 22px 140px}
 
-  /* Hero */
   .hero{background:var(--black);color:#fff;border-radius:var(--radius);padding:42px 36px 38px;position:relative;overflow:hidden;margin-bottom:36px}
   .hero::before{content:"";position:absolute;right:-60px;top:-100px;width:280px;height:280px;background:var(--yellow);border-radius:50%;filter:blur(80px);opacity:.4;pointer-events:none}
   .hero-tag{display:inline-block;padding:5px 12px;background:var(--yellow);color:var(--black);border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:18px;position:relative}
-  .hero h1{margin:0 0 14px;font-size:38px;line-height:1.05;letter-spacing:-0.025em;font-weight:800;position:relative;max-width:600px}
-  .hero-lead{margin:0;color:rgba(255,255,255,.78);font-size:16px;line-height:1.6;position:relative;max-width:580px}
+  .hero h1{margin:0 0 14px;font-size:34px;line-height:1.1;letter-spacing:-0.025em;font-weight:800;position:relative;max-width:600px}
+  .hero-lead{margin:0;color:rgba(255,255,255,.82);font-size:16px;line-height:1.6;position:relative;max-width:580px}
   .hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;position:relative}
   .hero-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;background:rgba(255,255,255,.08);border-radius:999px;font-size:12.5px;color:rgba(255,255,255,.85);font-weight:500}
-  @media (max-width:560px){.hero{padding:32px 24px}.hero h1{font-size:28px}}
+  @media (max-width:560px){.hero{padding:32px 24px}.hero h1{font-size:26px}}
 
-  /* Section */
   .section-head{margin:42px 0 16px}
   .section-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;background:var(--black);color:var(--yellow);border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px}
   .section-tag.tag-yellow{background:var(--yellow);color:var(--black)}
-  .section-tag.tag-light{background:#fff;color:var(--black);border:1px solid var(--border)}
   .section-title{margin:0;font-size:24px;font-weight:800;letter-spacing:-0.022em;line-height:1.2}
-  .section-desc{margin:6px 0 0;color:var(--text-mute);font-size:14px;line-height:1.55;max-width:560px}
 
-  /* Idea pitch card */
-  .idea{background:var(--surface);border-radius:var(--radius-sm);padding:20px 24px;margin-bottom:14px;box-shadow:var(--shadow);border:1px solid var(--border);position:relative}
-  .idea.a{border-left:4px solid var(--yellow)}
-  .idea.b{border-left:4px solid var(--black)}
-  .idea-name{font-size:12px;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-mute);margin-bottom:6px}
-  .idea-text{margin:0;font-size:14.5px;line-height:1.6;color:var(--text)}
-  .idea-text strong{font-weight:700;color:var(--black)}
-
-  /* Question card */
   .q{background:var(--surface);border-radius:var(--radius-sm);padding:22px 24px;margin-bottom:12px;box-shadow:var(--shadow);transition:all .15s;border:1px solid var(--border)}
   .q:focus-within{border-color:var(--yellow);box-shadow:var(--shadow-lg)}
   .q.gold{border-left:3px solid var(--yellow)}
   .q-num{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:24px;padding:0 9px;border-radius:7px;background:var(--bg);color:var(--text-mute);font-weight:700;font-size:12px;margin-bottom:10px}
-  .q.a .q-num{background:var(--yellow-soft);color:var(--black)}
-  .q.b .q-num{background:var(--black);color:var(--yellow)}
   .q-text{display:block;font-size:16.5px;font-weight:600;line-height:1.4;margin-bottom:8px;color:var(--text);letter-spacing:-0.01em}
   .q-help{font-size:13.5px;color:var(--text-mute);margin:0 0 12px;line-height:1.5}
-  .q-help.italic{font-style:italic}
 
   input[type=text], textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:var(--radius-input);font:inherit;color:var(--text);background:#fff;transition:all .15s;font-size:14.5px;line-height:1.55;-webkit-appearance:none}
   textarea{min-height:110px;resize:vertical;font-family:var(--font)}
@@ -96,7 +79,20 @@
   .opt.row{padding:8px 13px}
   .opt strong{font-weight:700}
 
-  /* Submit */
+  /* Feature grid */
+  .grid-group-title{font-size:12px;font-weight:800;color:var(--text);letter-spacing:0.08em;text-transform:uppercase;margin:18px 0 10px;padding-left:2px;display:flex;align-items:center;gap:8px}
+  .grid-group-title:first-child{margin-top:4px}
+  .grid-group-title::before{content:"";flex:0 0 4px;height:14px;background:var(--yellow);border-radius:2px}
+  .grid-feature{padding:14px 16px;border:1.5px solid var(--border);border-radius:12px;background:#fff;margin-bottom:8px;transition:all .15s}
+  .grid-feature.answered{border-color:var(--yellow);background:#FFFEF5}
+  .grid-feature-name{font-size:14.5px;font-weight:600;line-height:1.35;margin-bottom:10px;color:var(--text)}
+  .grid-options{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+  .grid-options label{padding:7px 4px;border:1.5px solid var(--border);border-radius:8px;background:#fff;font-size:11.5px;font-weight:500;line-height:1.25;text-align:center;color:var(--text-mute);cursor:pointer;transition:all .12s;display:flex;align-items:center;justify-content:center;min-height:42px}
+  .grid-options label:hover{border-color:#C5C8CD;color:var(--text)}
+  .grid-options label input{display:none}
+  .grid-options label.checked{background:var(--yellow);border-color:var(--yellow);color:var(--black);font-weight:700}
+  @media (max-width:520px){.grid-options{grid-template-columns:repeat(2,1fr)}.grid-options label{font-size:12px;min-height:38px}}
+
   .submit-area{margin-top:32px;background:var(--surface);border-radius:var(--radius);padding:30px 32px;box-shadow:var(--shadow-lg);text-align:center;border:1px solid var(--border)}
   .submit-area h3{margin:0 0 8px;font-size:24px;font-weight:800;letter-spacing:-0.02em}
   .submit-area p{margin:0 0 20px;color:var(--text-mute);font-size:15px;line-height:1.55}
@@ -128,7 +124,7 @@
   @media (max-width:560px){
     .top-inner{padding:12px 18px;gap:10px}
     main{padding:24px 18px 140px}
-    .q,.idea{padding:18px 20px}
+    .q{padding:18px 20px}
     .submit-area{padding:24px 22px}
     .section-title{font-size:22px}
     .q-text{font-size:15.5px}
@@ -140,10 +136,10 @@
 <header class="top">
   <div class="top-inner">
     <div class="brand">
-      <div class="brand-mark">Т</div>
+      <div class="brand-mark">А</div>
       <div class="brand-info">
-        <span class="brand-name">Т-Авто</span>
-        <span class="brand-sub">CustDev</span>
+        <span class="brand-name">Авто-исследование</span>
+        <span class="brand-sub">Личная инициатива · CustDev</span>
       </div>
     </div>
     <div class="top-spacer"></div>
@@ -155,20 +151,20 @@
 <main id="main-content">
 
   <div class="hero">
-    <span class="hero-tag">Опрос для автомобилистов</span>
-    <h1>Помоги понять, что должен делать Т-Авто</h1>
-    <p class="hero-lead">Думаем над тем, как Т-Банк может помогать автомобилистам — отдельным консьерж-сервисом или умной интеграцией существующих штук в одном месте. Мне реально интересно твоё мнение. Можно ругать, можно коротко. 10-15 минут.</p>
+    <span class="hero-tag">10 минут · можно ругать</span>
+    <h1>Привет!</h1>
+    <p class="hero-lead">Кручу в голове идею, как банкам сделать что-то реально полезное автомобилистам. Хочется понять у пользователей — какие есть задачи и проблемы. 10 минут твоего времени.</p>
     <div class="hero-meta">
-      <span class="hero-pill">⏱ 10–15 минут</span>
-      <span class="hero-pill">💬 Можно ругать</span>
+      <span class="hero-pill">⏱ ~10 минут</span>
+      <span class="hero-pill">💬 Можно коротко</span>
       <span class="hero-pill">💾 Автосохранение</span>
     </div>
   </div>
 
-  <!-- ============ ЧАСТЬ 1 — ПРОФИЛЬ ============ -->
+  <!-- ============= БЛОК 1 — КТО ТЫ ============= -->
   <div class="section-head">
-    <span class="section-tag">Часть 1 · Кто ты</span>
-    <h2 class="section-title">Несколько быстрых вопросов о тебе</h2>
+    <span class="section-tag">Часть 1</span>
+    <h2 class="section-title">Кто ты</h2>
   </div>
 
   <div class="q">
@@ -197,34 +193,20 @@
   <div class="q">
     <span class="q-num">03</span>
     <label class="q-text">Какая у тебя машина?</label>
-    <p class="q-help">Марка, модель, год — например «Toyota Camry 2019»</p>
+    <p class="q-help">Например: «Toyota Camry 2019»</p>
     <input type="text" data-q="car_make" placeholder="Марка модель год" />
+  </div>
+
+  <!-- ============= БЛОК 2 — ЖИЗНЬ С МАШИНОЙ ============= -->
+  <div class="section-head">
+    <span class="section-tag tag-yellow">Часть 2</span>
+    <h2 class="section-title">Жизнь с машиной</h2>
   </div>
 
   <div class="q">
     <span class="q-num">04</span>
-    <label class="q-text">Личный доход в месяц</label>
-    <p class="q-help">Помогает понять ценовой сегмент. Можно пропустить.</p>
-    <div class="opts row" data-single="income">
-      <label class="opt row"><input type="radio" name="income" value="<100k"><span>до 100k ₽</span></label>
-      <label class="opt row"><input type="radio" name="income" value="100-200k"><span>100–200k</span></label>
-      <label class="opt row"><input type="radio" name="income" value="200-500k"><span>200–500k</span></label>
-      <label class="opt row"><input type="radio" name="income" value="500k+"><span>500k+</span></label>
-      <label class="opt row"><input type="radio" name="income" value="skip"><span>пропустить</span></label>
-    </div>
-  </div>
-
-  <!-- ============ ЧАСТЬ 2 — ТЕКУЩАЯ НАГРУЗКА ============ -->
-  <div class="section-head">
-    <span class="section-tag tag-yellow">Часть 2 · Жизнь с машиной</span>
-    <h2 class="section-title">Сколько денег и нервов уходит</h2>
-    <p class="section-desc">Без подробностей. Хочется понять масштаб.</p>
-  </div>
-
-  <div class="q">
-    <span class="q-num">05</span>
-    <label class="q-text">Сколько в месяц денег уходит на машину сверх бензина?</label>
-    <p class="q-help">Мойка, ТО, шины, страховка, штрафы, парковки, мелкое.</p>
+    <label class="q-text">Сколько примерно тратишь на машину в месяц сверх бензина?</label>
+    <p class="q-help">Мойка, ТО, шины, страховка, штрафы, парковки, мелочь.</p>
     <div class="opts row" data-single="monthly_spend">
       <label class="opt row"><input type="radio" name="monthly_spend" value="<3k"><span>до 3k ₽</span></label>
       <label class="opt row"><input type="radio" name="monthly_spend" value="3-10k"><span>3–10k</span></label>
@@ -235,269 +217,252 @@
     </div>
   </div>
 
+  <div class="q gold">
+    <span class="q-num">05</span>
+    <label class="q-text">Расскажи историю с машиной, которая запомнилась больше всего</label>
+    <p class="q-help">Не обязательно последняя — может быть и давний случай, главное чтобы помнил детали. Поломка, ТО, штрафы, ДТП, странный сервис — что угодно. Что было, как разрулил, сколько ушло времени и денег.</p>
+    <textarea data-q="memorable_story" class="big" placeholder="Конкретная история — чем подробнее, тем лучше"></textarea>
+  </div>
+
+  <!-- ============= БЛОК 3 — ЧТО ИСПОЛЬЗУЕШЬ ============= -->
+  <div class="section-head">
+    <span class="section-tag">Часть 3</span>
+    <h2 class="section-title">Чем пользуешься сейчас</h2>
+  </div>
+
   <div class="q">
     <span class="q-num">06</span>
-    <label class="q-text">Сколько часов в месяц уходит на «возню» вокруг машины?</label>
-    <p class="q-help">Отвезти-забрать, ждать в сервисе, дозваниваться, разбираться со штрафом и т.п.</p>
-    <div class="opts row" data-single="hours_per_month">
-      <label class="opt row"><input type="radio" name="hours_per_month" value="<1"><span>&lt;1 ч</span></label>
-      <label class="opt row"><input type="radio" name="hours_per_month" value="1-3"><span>1–3 ч</span></label>
-      <label class="opt row"><input type="radio" name="hours_per_month" value="3-8"><span>3–8 ч</span></label>
-      <label class="opt row"><input type="radio" name="hours_per_month" value="8-20"><span>8–20 ч</span></label>
-      <label class="opt row"><input type="radio" name="hours_per_month" value="20+"><span>20+ ч</span></label>
+    <label class="q-text">Через какие приложения и сервисы ты решаешь задачи с машиной?</label>
+    <p class="q-help">Отметь всё, чем пользуешься хотя бы иногда — оплата штрафов и парковок, страховки, поиск сервисов, документы. Если ничего из списка — оставь пустым или впиши свой вариант ниже.</p>
+    <div class="opts" data-multi="current_services">
+      <label class="opt"><input type="checkbox" value="tbank"><span>Приложение Т-Банка</span></label>
+      <label class="opt"><input type="checkbox" value="sber"><span>Приложение Сбера</span></label>
+      <label class="opt"><input type="checkbox" value="alfa"><span>Приложение Альфы</span></label>
+      <label class="opt"><input type="checkbox" value="vtb"><span>Приложение ВТБ</span></label>
+      <label class="opt"><input type="checkbox" value="other_bank"><span>Приложение другого банка</span></label>
+      <label class="opt"><input type="checkbox" value="gosuslugi"><span>Госуслуги / Авто.госуслуги</span></label>
+      <label class="opt"><input type="checkbox" value="city_parking"><span>Парковки Москвы / городское парковочное приложение</span></label>
+      <label class="opt"><input type="checkbox" value="yandex"><span>Яндекс (Карты, Заправки, Парковки)</span></label>
+      <label class="opt"><input type="checkbox" value="autoru"><span>Авто.ру / Drom</span></label>
+      <label class="opt"><input type="checkbox" value="carsharing"><span>Приложение каршеринга</span></label>
+      <label class="opt"><input type="checkbox" value="insurance_app"><span>Приложение страховой</span></label>
     </div>
+    <input type="text" data-q="current_services_other" placeholder="Что-то ещё — впиши какое именно приложение" style="margin-top:8px" />
+  </div>
+
+  <!-- ============= БЛОК 4 — ФИЧИ ============= -->
+  <div class="section-head">
+    <span class="section-tag tag-yellow">Часть 4</span>
+    <h2 class="section-title">Авто-фичи: что у тебя есть и чего хочется</h2>
+    <p class="q-help" style="margin-top:8px;max-width:580px">По каждой фиче отметь — есть у тебя где-то, и пользуешься, или есть, но забил, или не хватает, или вообще не нужно.</p>
   </div>
 
   <div class="q">
     <span class="q-num">07</span>
-    <label class="q-text">Что чаще всего съедает время или нервы за последние 3 месяца?</label>
-    <p class="q-help">Можно отметить несколько.</p>
-    <div class="opts" data-multi="recent_pains">
-      <label class="opt"><input type="checkbox" value="washing"><span>Мойка</span></label>
-      <label class="opt"><input type="checkbox" value="tires"><span>Шиномонтаж / переобувка</span></label>
-      <label class="opt"><input type="checkbox" value="service"><span>Плановое ТО</span></label>
-      <label class="opt"><input type="checkbox" value="repair"><span>Ремонт / поломка</span></label>
-      <label class="opt"><input type="checkbox" value="insurance"><span>ОСАГО / КАСКО</span></label>
-      <label class="opt"><input type="checkbox" value="fines"><span>Штрафы и их оплата</span></label>
-      <label class="opt"><input type="checkbox" value="parking"><span>Парковки</span></label>
-      <label class="opt"><input type="checkbox" value="accident"><span>ДТП или его последствия</span></label>
-      <label class="opt"><input type="checkbox" value="parts"><span>Поиск/выбор запчастей</span></label>
-      <label class="opt"><input type="checkbox" value="finding_master"><span>Поиск мастера / СТО которому доверяешь</span></label>
-      <label class="opt"><input type="checkbox" value="docs"><span>Документы / регистрация</span></label>
-      <label class="opt"><input type="checkbox" value="none"><span>Ничего особо не доставало</span></label>
+
+    <div class="grid-group-title">Платежи, документы, парковки</div>
+
+    <div class="grid-feature" data-grid="f1">
+      <div class="grid-feature-name">Все обязательные платежи по машине в одном месте — штрафы, парковки, ОСАГО, транспортный налог. С автоплатежом по выбору</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f1" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f1" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f1" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f1" value="skip"><span>не нужно</span></label>
+      </div>
     </div>
+
+    <div class="grid-feature" data-grid="f8">
+      <div class="grid-feature-name">Электронный полис ОСАГО и КАСКО — оформить, продлить, иметь на руках в приложении</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f8" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f8" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f8" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f8" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f11">
+      <div class="grid-feature-name">Документы машины (ОСАГО, КАСКО, диагностика) — с напоминаниями о сроках и быстрой отправкой страховой при ДТП</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f11" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f11" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f11" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f11" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f10">
+      <div class="grid-feature-name">Подсказывает где припарковаться поблизости — свободные места, цены, оплата в один тап</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f10" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f10" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f10" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f10" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-group-title">Сервис и обслуживание</div>
+
+    <div class="grid-feature" data-grid="f3">
+      <div class="grid-feature-name">Подбор СТО / мойки / шиномонтажа — рядом с домом, работой или по маршруту, с отзывами и ценами</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f3" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f3" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f3" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f3" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f4">
+      <div class="grid-feature-name">Рекомендации по запчастям и расходникам — что подходит к моей машине, где купить</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f4" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f4" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f4" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f4" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f5">
+      <div class="grid-feature-name">Напоминания: ТО, страховка, замена масла, регистрация — по календарю моей машины</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f5" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f5" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f5" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f5" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f6">
+      <div class="grid-feature-name">История моей машины — все ТО, ремонты, расходы и пробег в одном месте, история по дате</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f6" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f6" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f6" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f6" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-group-title">Помощь, информация, решения</div>
+
+    <div class="grid-feature" data-grid="f2">
+      <div class="grid-feature-name">AI-помощник для авто-вопросов: «что значит лампочка на панели», «какое масло мне нужно», «что за стук под капотом», «срочно ехать к мастеру?». Отвечает с учётом твоей конкретно машины</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f2" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f2" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f2" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f2" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f7">
+      <div class="grid-feature-name">SOS при ДТП или поломке — пошагово что делать, связь со страховой и эвакуатором</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f7" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f7" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f7" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f7" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+
+    <div class="grid-feature" data-grid="f9">
+      <div class="grid-feature-name">Помощь при покупке или продаже машины — пробег, история, рыночная оценка</div>
+      <div class="grid-options">
+        <label><input type="radio" name="f9" value="have_use"><span>есть, пользуюсь</span></label>
+        <label><input type="radio" name="f9" value="have_skip"><span>есть, не пользуюсь</span></label>
+        <label><input type="radio" name="f9" value="want"><span>нет, хочу</span></label>
+        <label><input type="radio" name="f9" value="skip"><span>не нужно</span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============= БЛОК 5 — КОНСЬЕРЖ ============= -->
+  <div class="section-head">
+    <span class="section-tag">Часть 5</span>
+    <h2 class="section-title">Идея консьержа</h2>
   </div>
 
   <div class="q gold">
     <span class="q-num">08</span>
-    <label class="q-text">Расскажи последнюю историю, когда машина реально достала</label>
-    <p class="q-help italic">Что произошло, как разрулил, сколько ушло времени и денег. По шагам — нам важны детали и ругательства.</p>
-    <textarea data-q="last_pain_story" class="big" placeholder="Конкретный последний случай…"></textarea>
-  </div>
-
-  <!-- ============ ЧАСТЬ 3 — БАНКИ ============ -->
-  <div class="section-head">
-    <span class="section-tag">Часть 3 · Банки и авто</span>
-    <h2 class="section-title">Что используешь сейчас от банков</h2>
+    <label class="q-text">Представь сервис, который приезжает к тебе, забирает машину, везёт на услугу (мойка / ТО / шины) и возвращает. Был за последние полгода случай, когда заказал бы?</label>
+    <p class="q-help">Если был — опиши когда и почему. Если нет — напиши почему такая идея тебе не подходит (странно отдавать машину, всё успеваешь сам, и т.д.).</p>
+    <textarea data-q="concierge_reaction" placeholder="Конкретный случай или почему не зашло"></textarea>
   </div>
 
   <div class="q">
     <span class="q-num">09</span>
-    <label class="q-text">Что используешь от Т-Банка / других банков для авто-задач?</label>
-    <p class="q-help">Можно отметить несколько.</p>
-    <div class="opts" data-multi="bank_services">
-      <label class="opt"><input type="checkbox" value="fines"><span>Оплата штрафов</span></label>
-      <label class="opt"><input type="checkbox" value="parking"><span>Оплата парковок</span></label>
-      <label class="opt"><input type="checkbox" value="osago"><span>ОСАГО / КАСКО</span></label>
-      <label class="opt"><input type="checkbox" value="auto_credit"><span>Авто-кредит</span></label>
-      <label class="opt"><input type="checkbox" value="cashback_fuel"><span>Кэшбек на бензин</span></label>
-      <label class="opt"><input type="checkbox" value="gas_pay"><span>Оплата заправки через приложение</span></label>
-      <label class="opt"><input type="checkbox" value="search_sto"><span>Поиск автосервисов / партнёрские СТО</span></label>
-      <label class="opt"><input type="checkbox" value="autoru"><span>Авто.ру (купил/смотрел через Т-Банк)</span></label>
-      <label class="opt"><input type="checkbox" value="other_bank"><span>Что-то от других банков (не Т-Банка)</span></label>
-      <label class="opt"><input type="checkbox" value="none"><span>Ничего из этого не использую</span></label>
+    <label class="q-text">Сколько готов отдать за услугу консьержа — отдельно от стоимости мойки/ТО/шиномонтажа?</label>
+    <p class="q-help">Только за «приехали-забрали-вернули». Сама мойка / ТО / шиномонтаж оплачивается как обычно сверх этой суммы.</p>
+    <div class="opts" data-single="concierge_wtp">
+      <label class="opt"><input type="radio" name="concierge_wtp" value="0"><span>0 — не воспользуюсь ни за какие</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="<1000"><span>До 1 000 ₽</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="1000-1500"><span>1 000 – 1 500 ₽</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="1500-2500"><span>1 500 – 2 500 ₽</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="2500-4000"><span>2 500 – 4 000 ₽</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="4000-6000"><span>4 000 – 6 000 ₽</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="6000-10000"><span>6 000 – 10 000 ₽ — за реальное удобство и качество</span></label>
+      <label class="opt"><input type="radio" name="concierge_wtp" value="10000+"><span>10 000+ ₽ — премиум, лишь бы было идеально</span></label>
     </div>
   </div>
 
-  <div class="q gold">
+  <!-- ============= БЛОК 6 — ДОВЕРИЕ ============= -->
+  <div class="section-head">
+    <span class="section-tag tag-yellow">Часть 6</span>
+    <h2 class="section-title">Кому из этих ребят ты бы доверил решать авто-задачи</h2>
+  </div>
+
+  <div class="q">
     <span class="q-num">10</span>
-    <label class="q-text">Чего тебе сейчас не хватает в твоём приложении банка по автомобильной части?</label>
-    <p class="q-help italic">Что ты делаешь в других приложениях / сайтах потому что в банке этого нет?</p>
-    <textarea data-q="bank_app_missing" placeholder="Например: «Хочу одну кнопку для всех штрафов с ГИБДД и Москвы», «Не хочу заходить в Госуслуги чтобы…»"></textarea>
-  </div>
-
-  <!-- ============ ЧАСТЬ 4 — ИДЕЯ А: КОНСЬЕРЖ ============ -->
-  <div class="section-head">
-    <span class="section-tag tag-light">Часть 4 · Идея А</span>
-    <h2 class="section-title">Физический консьерж — забрать-сделать-вернуть</h2>
-  </div>
-
-  <div class="idea a">
-    <div class="idea-name">Что это</div>
-    <p class="idea-text"><strong>Сервис от Т-Банка приезжает к тебе домой или на работу, забирает машину, везёт на нужную услугу — мойка, шиномонтаж, ТО, мелкий ремонт — и возвращает к оговорённому времени.</strong> За доплату сверху, со страховкой и фото при приёме-сдаче.</p>
-  </div>
-
-  <div class="q a">
-    <span class="q-num">11</span>
-    <label class="q-text">Был за последние полгода реальный случай, когда заказал бы?</label>
-    <div class="opts" data-single="concierge_case">
-      <label class="opt"><input type="radio" name="concierge_case" value="yes"><span>Да, был случай (опишу ниже)</span></label>
-      <label class="opt"><input type="radio" name="concierge_case" value="no_handle"><span>Нет, всё успеваю сам</span></label>
-      <label class="opt"><input type="radio" name="concierge_case" value="no_strange"><span>Нет, мне это вообще странно — никогда бы не отдал машину</span></label>
-      <label class="opt"><input type="radio" name="concierge_case" value="maybe"><span>Может быть, но ситуация не сложилась</span></label>
-    </div>
-  </div>
-
-  <div class="q a gold">
-    <span class="q-num">12</span>
-    <label class="q-text">Если был случай — опиши его</label>
-    <p class="q-help italic">Когда, что было, почему именно тогда хотелось бы воспользоваться. Если случая не было — пропусти.</p>
-    <textarea data-q="concierge_case_story" placeholder="Например: «Перед командировкой нужно было поменять резину, но не успевал в выходные»"></textarea>
-  </div>
-
-  <div class="q a">
-    <span class="q-num">13</span>
-    <label class="q-text">Что главное смущает в идее консьержа?</label>
-    <p class="q-help">Можно несколько.</p>
-    <div class="opts" data-multi="concierge_concerns">
-      <label class="opt"><input type="checkbox" value="trust_driver"><span>Доверие водителю — а вдруг разобьёт или украдёт</span></label>
-      <label class="opt"><input type="checkbox" value="damage"><span>Кто отвечает за повреждения</span></label>
-      <label class="opt"><input type="checkbox" value="quality_service"><span>Качество мастерской — мой проверенный лучше</span></label>
-      <label class="opt"><input type="checkbox" value="price"><span>Цена — слишком дорого</span></label>
-      <label class="opt"><input type="checkbox" value="docs_keys"><span>Передача ключей и документов</span></label>
-      <label class="opt"><input type="checkbox" value="control_loss"><span>Я хочу видеть что делают с машиной</span></label>
-      <label class="opt"><input type="checkbox" value="time_uncertainty"><span>Когда вернут — непонятно</span></label>
-      <label class="opt"><input type="checkbox" value="nothing"><span>Ничего особо не смущает</span></label>
-    </div>
-  </div>
-
-  <div class="q a">
-    <span class="q-num">14</span>
-    <label class="q-text">Сколько максимум готов доплатить за «забрали-помыли-вернули» (~20 км)?</label>
-    <div class="opts row" data-single="concierge_wtp">
-      <label class="opt row"><input type="radio" name="concierge_wtp" value="0"><span>0 — не воспользуюсь</span></label>
-      <label class="opt row"><input type="radio" name="concierge_wtp" value="300"><span>~300 ₽</span></label>
-      <label class="opt row"><input type="radio" name="concierge_wtp" value="500"><span>~500 ₽</span></label>
-      <label class="opt row"><input type="radio" name="concierge_wtp" value="1000"><span>~1 000 ₽</span></label>
-      <label class="opt row"><input type="radio" name="concierge_wtp" value="2000"><span>~2 000 ₽</span></label>
-      <label class="opt row"><input type="radio" name="concierge_wtp" value="3000+"><span>3 000+ ₽</span></label>
-    </div>
-  </div>
-
-  <!-- ============ ЧАСТЬ 5 — ИДЕЯ Б: ИНТЕГРАТОР ============ -->
-  <div class="section-head">
-    <span class="section-tag tag-yellow">Часть 5 · Идея Б</span>
-    <h2 class="section-title">Умный интегратор внутри Т-Банка</h2>
-  </div>
-
-  <div class="idea b">
-    <div class="idea-name">Что это</div>
-    <p class="idea-text"><strong>Один экран в приложении Т-Банка, который объединяет всё, что связано с машиной.</strong> Видит твои штрафы из всех источников (ГИБДД + Москва + регионы), парковки, ОСАГО, ТО — без дублей и забытых платежей. Подсказывает где дешевле застраховать, когда менять масло, какой сервис рядом по отзывам. Может ответить на вопрос вроде «загорелся чек, что делать» с привязкой к твоей машине. Работает поверх Авто.ру и других сервисов Т-Банка.</p>
-  </div>
-
-  <div class="q b">
-    <span class="q-num">15</span>
-    <label class="q-text">Какие сценарии тебе зашли бы больше всего?</label>
-    <p class="q-help">Можно несколько. Это определит что разрабатывать в первую очередь.</p>
-    <div class="opts" data-multi="integration_scenarios">
-      <label class="opt"><input type="checkbox" value="all_fines"><span>Все штрафы из всех источников в одном месте, без дублей</span></label>
-      <label class="opt"><input type="checkbox" value="reminders"><span>Умные напоминания: ТО, страховка, регистрация, замена масла</span></label>
-      <label class="opt"><input type="checkbox" value="ai_chat"><span>AI-чат «загорелся чек, что делать» — с учётом моей машины</span></label>
-      <label class="opt"><input type="checkbox" value="sto_recommend"><span>Подбор сервиса/мойки рядом по отзывам и цене</span></label>
-      <label class="opt"><input type="checkbox" value="osago_compare"><span>Сравнение цен на ОСАГО и автоматическое продление</span></label>
-      <label class="opt"><input type="checkbox" value="cashback_partners"><span>Кэшбек на бензин и партнёрские сервисы</span></label>
-      <label class="opt"><input type="checkbox" value="car_history"><span>История моей машины: ТО, ремонт, расходы — в одном месте</span></label>
-      <label class="opt"><input type="checkbox" value="buy_sell_help"><span>Помощь при покупке/продаже машины (пробег, история, цена)</span></label>
-      <label class="opt"><input type="checkbox" value="parking_smart"><span>Умные парковки: подсказывает где дешевле и не забыть оплатить</span></label>
-      <label class="opt"><input type="checkbox" value="emergency"><span>SOS-помощник в стрессовой ситуации (ДТП, поломка, эвакуация)</span></label>
-    </div>
-  </div>
-
-  <div class="q b gold">
-    <span class="q-num">16</span>
-    <label class="q-text">Какой реальный кейс из своей жизни ты бы решил через такого помощника?</label>
-    <p class="q-help italic">Не «было бы удобно», а конкретный кейс который у тебя сейчас не закрыт. Возьми его и опиши — что бы ты у него спросил/сделал.</p>
-    <textarea data-q="integration_real_case" class="big" placeholder="Конкретный кейс из жизни…"></textarea>
-  </div>
-
-  <div class="q b">
-    <span class="q-num">17</span>
-    <label class="q-text">Готов автоматически платить штрафы / парковки / страховку без подтверждений?</label>
-    <div class="opts" data-single="autopay_trust">
-      <label class="opt"><input type="radio" name="autopay_trust" value="all_auto"><span>Да, всё автоматически — лишь бы не думать</span></label>
-      <label class="opt"><input type="radio" name="autopay_trust" value="small_auto"><span>Только мелкое (до N ₽), большое с подтверждением</span></label>
-      <label class="opt"><input type="radio" name="autopay_trust" value="confirm_all"><span>Только с подтверждением — никакого автоплатежа</span></label>
-      <label class="opt"><input type="radio" name="autopay_trust" value="never"><span>Нет, не доверю банку такое</span></label>
-    </div>
-  </div>
-
-  <div class="q b gold">
-    <span class="q-num">18</span>
-    <label class="q-text">Что заставило бы тебя пользоваться авто-частью именно Т-Банка, а не Сбера / Яндекса / Госуслуг?</label>
-    <p class="q-help italic">Это самый ценный для нас вопрос — пиши развёрнуто. Что должно быть, чтобы ты переключился? Или ты лоялен к одному игроку и не променяешь?</p>
-    <textarea data-q="why_tbank" class="big" placeholder="Что должно быть, чтобы выбрал Т-Банк…"></textarea>
-  </div>
-
-  <div class="q b">
-    <span class="q-num">19</span>
-    <label class="q-text">Сколько готов платить за такую интеграцию?</label>
-    <div class="opts" data-single="integration_wtp">
-      <label class="opt"><input type="radio" name="integration_wtp" value="0_free"><span>Должно быть бесплатно — это базовая функция банка</span></label>
-      <label class="opt"><input type="radio" name="integration_wtp" value="0_premium"><span>Бесплатно, но только для держателей премиум-карты</span></label>
-      <label class="opt"><input type="radio" name="integration_wtp" value="200"><span>до 200 ₽/мес</span></label>
-      <label class="opt"><input type="radio" name="integration_wtp" value="500"><span>до 500 ₽/мес</span></label>
-      <label class="opt"><input type="radio" name="integration_wtp" value="1000"><span>до 1 000 ₽/мес</span></label>
-      <label class="opt"><input type="radio" name="integration_wtp" value="not_needed"><span>Не нужно</span></label>
-    </div>
-  </div>
-
-  <!-- ============ ЧАСТЬ 6 — ДОВЕРИЕ ============ -->
-  <div class="section-head">
-    <span class="section-tag">Часть 6 · Доверие</span>
-    <h2 class="section-title">Кому доверяешь свою машину</h2>
-  </div>
-
-  <div class="q">
-    <span class="q-num">20</span>
-    <label class="q-text">Кому ты сейчас реально доверяешь решать задачи вокруг машины?</label>
-    <p class="q-help">Можно несколько.</p>
+    <label class="q-text">Кому бы доверил?</label>
+    <p class="q-help">Можно несколько. Думай в духе «к кому пойду в первую очередь, если бы они предложили».</p>
     <div class="opts" data-multi="trust">
-      <label class="opt"><input type="checkbox" value="own_master"><span>Свой проверенный мастер 5+ лет</span></label>
-      <label class="opt"><input type="checkbox" value="dealer"><span>Официальный дилер</span></label>
-      <label class="opt"><input type="checkbox" value="insurance"><span>Страховой ассистанс</span></label>
-      <label class="opt"><input type="checkbox" value="family"><span>Муж / папа / друг</span></label>
-      <label class="opt"><input type="checkbox" value="tbank"><span>Т-Банк</span></label>
-      <label class="opt"><input type="checkbox" value="sber"><span>Сбер</span></label>
-      <label class="opt"><input type="checkbox" value="yandex"><span>Яндекс</span></label>
-      <label class="opt"><input type="checkbox" value="autoru"><span>Авто.ру</span></label>
-      <label class="opt"><input type="checkbox" value="gosuslugi"><span>Госуслуги</span></label>
-      <label class="opt"><input type="checkbox" value="nobody"><span>Никому особо — всё контролирую сам</span></label>
+      <label class="opt"><input type="checkbox" value="own_master"><span>Своему проверенному мастеру / СТО</span></label>
+      <label class="opt"><input type="checkbox" value="dealer"><span>Официальному дилеру</span></label>
+      <label class="opt"><input type="checkbox" value="tbank"><span>Т-Банку</span></label>
+      <label class="opt"><input type="checkbox" value="sber"><span>Сберу</span></label>
+      <label class="opt"><input type="checkbox" value="yandex"><span>Яндексу</span></label>
+      <label class="opt"><input type="checkbox" value="autoru"><span>Авто.ру / Drom</span></label>
+      <label class="opt"><input type="checkbox" value="gosuslugi"><span>Госуслугам</span></label>
+      <label class="opt"><input type="checkbox" value="insurance"><span>Страховой</span></label>
+      <label class="opt"><input type="checkbox" value="nobody"><span>Никому — всё контролирую сам</span></label>
     </div>
+    <input type="text" data-q="trust_other" placeholder="Кому-то ещё — впиши кому" style="margin-top:8px" />
   </div>
 
-  <div class="q gold">
-    <span class="q-num">21</span>
-    <label class="q-text">Что должно произойти чтобы ты перестал пользоваться авто-сервисом, который тебе нравился?</label>
-    <p class="q-help italic">Был случай когда «отвалился» от привычного сервиса/мастера? Что стало триггером?</p>
-    <textarea data-q="trust_breakdown" placeholder="Что выводит из себя так, что больше не возвращаешься…"></textarea>
-  </div>
-
-  <!-- ============ ЧАСТЬ 7 — ВЫБОР И ФИНАЛ ============ -->
+  <!-- ============= БЛОК 7 — ФИНАЛ ============= -->
   <div class="section-head">
-    <span class="section-tag tag-yellow">Часть 7 · Финал</span>
-    <h2 class="section-title">Главный выбор</h2>
-  </div>
-
-  <div class="q">
-    <span class="q-num">22</span>
-    <label class="q-text">Если бы Т-Банк сделал только что-то одно — что для тебя было бы ценнее?</label>
-    <div class="opts" data-single="ab_choice">
-      <label class="opt"><input type="radio" name="ab_choice" value="a"><span><strong>А</strong> — Физический консьерж (забрали-сделали-вернули)</span></label>
-      <label class="opt"><input type="radio" name="ab_choice" value="b"><span><strong>Б</strong> — Интегратор в банке (всё в одном месте)</span></label>
-      <label class="opt"><input type="radio" name="ab_choice" value="both"><span>Оба нужны — но Б важнее, А — приятный бонус</span></label>
-      <label class="opt"><input type="radio" name="ab_choice" value="both_a"><span>Оба нужны — но А важнее, Б — фоном</span></label>
-      <label class="opt"><input type="radio" name="ab_choice" value="neither"><span>Ни одно не нужно</span></label>
-    </div>
+    <span class="section-tag">Часть 7 · Финал</span>
+    <h2 class="section-title">Главное</h2>
   </div>
 
   <div class="q gold">
-    <span class="q-num">23</span>
-    <label class="q-text">Чего тебе больше всего не хватает в «жизни с машиной» — что-то совсем другое, что бы реально облегчило жизнь?</label>
-    <p class="q-help italic">Это самый важный вопрос для нас. Думай шире — может быть, нужное решение никто пока не делает. Расскажи как видишь.</p>
-    <textarea data-q="third_option" class="big" placeholder="Идея, которую никто пока не сделал, а зря…"></textarea>
+    <span class="q-num">11</span>
+    <label class="q-text">Чего тебе не хватает в авто-жизни? Что-то совсем своё, чего пока нигде нет — но реально облегчило бы тебе жизнь?</label>
+    <p class="q-help">Это самый ценный для меня вопрос. Думай шире — не обязательно фича приложения, может быть что угодно. Если сходу не приходит — пропусти.</p>
+    <textarea data-q="wishlist" class="big" placeholder="Идея или штука, которой реально не хватает"></textarea>
   </div>
 
   <div class="q">
-    <span class="q-num">24</span>
+    <span class="q-num">12</span>
+    <label class="q-text">Если бы кто-то построил для тебя одно из этого — что было бы ценнее?</label>
+    <div class="opts" data-single="ab_choice">
+      <label class="opt"><input type="radio" name="ab_choice" value="concierge"><span><strong>Сервис «забрали-сделали-вернули»</strong> — приезжает к тебе, забирает машину, везёт на услугу (мойка, ТО, шины), возвращает. За доплату.</span></label>
+      <label class="opt"><input type="radio" name="ab_choice" value="ai_assistant"><span><strong>AI-помощник по машине</strong> в приложении — отвечает на любой авто-вопрос («загорелся чек, что делать», «когда менять масло»), сам собирает все штрафы и платежи без дублей, рекомендует сервисы рядом и запчасти под твою машину.</span></label>
+      <label class="opt"><input type="radio" name="ab_choice" value="both"><span>Оба нужны — и одинаково</span></label>
+      <label class="opt"><input type="radio" name="ab_choice" value="neither"><span>Ни одно мне особо не нужно</span></label>
+    </div>
+  </div>
+
+  <div class="q">
+    <span class="q-num">13</span>
     <label class="q-text">Можно с тобой связаться, если будут уточнения? (опционально)</label>
-    <p class="q-help">Если разрешишь — может задам ещё пару уточняющих вопросов с глубже.</p>
     <input type="text" data-q="contact" placeholder="Телефон или @username в телеграме" />
   </div>
 
-  <!-- Submit -->
   <div class="submit-area" id="submit-area">
     <h3>Готово</h3>
-    <p>Спасибо, что дошёл до конца. Твои ответы — топливо для продукта.</p>
+    <p>Спасибо. Жми «Отправить» — и всё прилетит мне.</p>
     <div class="btn-row">
       <button class="btn btn-primary btn-big" id="btn-submit">Отправить ответы</button>
       <button class="btn btn-ghost" id="btn-download">Скачать копию (JSON)</button>
@@ -508,7 +473,7 @@
   <div class="thanks" id="thanks">
     <div class="check">✓</div>
     <h2>Спасибо!</h2>
-    <p>Твои ответы получили. Если будут уточнения — напишем.</p>
+    <p>Ответы получили. Если будут уточнения — напишу.</p>
     <button class="btn btn-ghost" id="btn-again">Пройти ещё раз</button>
   </div>
 
@@ -519,7 +484,7 @@
 <script>
 const CONFIG = { ENDPOINT_URL: "https://script.google.com/macros/s/AKfycbyMwSY28yyxrscSP5-20jHJXWUTZ03lzVp89pJI1Y65EGHLqA95HDpbed1MuZMZc9k0/exec" };
 const FORM_TYPE = "main";
-const STORAGE_KEY = "tcar_main_v4";
+const STORAGE_KEY = "tcar_main_v5";
 const state = { answers:{}, startedAt:Date.now() };
 
 const $ = (s,r=document)=>r.querySelector(s);
@@ -547,12 +512,15 @@ function showSavedIndicator(){
   saveTimer = setTimeout(()=>el.classList.remove("show"),1800);
 }
 
-function totalQuestions(){ return $$("[data-q],[data-single],[data-multi]").length; }
+function totalQuestions(){
+  return $$("[data-q],[data-single],[data-multi],[data-grid]").length;
+}
 function answeredCount(){
   let count = 0;
   $$("[data-q]").forEach(el=>{ if(el.value && el.value.trim()) count++; });
   $$("[data-single]").forEach(g=>{ const k=g.dataset.single; if(state.answers[k]) count++; });
   $$("[data-multi]").forEach(g=>{ const k=g.dataset.multi; if(Array.isArray(state.answers[k]) && state.answers[k].length>0) count++; });
+  $$("[data-grid]").forEach(g=>{ const k=g.dataset.grid; if(state.answers[k]) count++; });
   return count;
 }
 function updateProgress(){
@@ -580,6 +548,16 @@ function restoreAnswers(){
       $$("input[type=checkbox]",g).forEach(c=>{
         c.checked = arr.includes(c.value);
         c.closest(".opt")?.classList.toggle("checked", c.checked);
+      });
+    }
+  });
+  $$("[data-grid]").forEach(g=>{
+    const k = g.dataset.grid; const v = state.answers[k];
+    if(v){
+      g.classList.add("answered");
+      $$("input[type=radio]",g).forEach(r=>{
+        r.checked = (r.value===v);
+        r.closest("label")?.classList.toggle("checked", r.checked);
       });
     }
   });
@@ -612,6 +590,17 @@ function bindInputs(){
       });
     });
   });
+  $$("[data-grid]").forEach(g=>{
+    const key = g.dataset.grid;
+    $$("input[type=radio]",g).forEach(r=>{
+      r.addEventListener("change",()=>{
+        state.answers[key] = r.value;
+        g.classList.add("answered");
+        $$("input[type=radio]",g).forEach(rr=>rr.closest("label")?.classList.toggle("checked", rr.checked));
+        save();
+      });
+    });
+  });
 }
 
 function exportPayload(){
@@ -619,7 +608,7 @@ function exportPayload(){
     meta:{
       product:"TCar Concierge",
       formType:FORM_TYPE,
-      surveyVersion:"4.0",
+      surveyVersion:"5.0",
       startedAt:new Date(state.startedAt).toISOString(),
       submittedAt:new Date().toISOString()
     },
@@ -656,7 +645,7 @@ async function submitToSheet(){
 function showThanks(){
   $("#submit-area").style.display = "none";
   $("#thanks").classList.add("show");
-  $$(".q,.section-head,.idea,.hero").forEach(el=>el.style.display="none");
+  $$(".q,.section-head,.hero").forEach(el=>el.style.display="none");
   window.scrollTo({top:0,behavior:"smooth"});
 }
 function downloadJson(){
@@ -664,7 +653,7 @@ function downloadJson(){
   const blob = new Blob([json],{type:"application/json"});
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
-  a.href=url; a.download="tauto_survey_"+Date.now()+".json";
+  a.href=url; a.download="auto_research_"+Date.now()+".json";
   document.body.appendChild(a); a.click(); a.remove();
   URL.revokeObjectURL(url);
 }
